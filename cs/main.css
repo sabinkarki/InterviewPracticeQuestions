@@ -1,0 +1,28 @@
+.nav-left{
+    float: left;
+     margin-top: 140;
+    color:cyan;
+}
+
+.dropdown-menu{
+    margin-left: -21px;
+}
+
+.aboutMe{
+        margin-top: 50;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+     margin-left: 300px;
+    width: 100%;
+}
+
+#cursor{
+    cursor: pointer;
+}
+
+body{
+    background-color:aquamarine;
+}

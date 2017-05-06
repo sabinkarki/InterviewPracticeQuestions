@@ -1,0 +1,54 @@
+<html>
+<head>
+<link href="js/bower_components/bootstrap/dist/css/bootstrap.css">
+<link href="cs/main.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="myApp">
+    <div class="container-fluid ">
+        <div class="row">
+             <div class="col-sm-3 col-md-3 nav-left">
+            <ul class="nav">
+              <li class="active"><a href="#!/aboutMe">About Me</a></li>
+              <li><a href="#!/coreJava">Core Java</a></li>   
+              <li><a href="#">Spring MVC</a></li>  
+              <li><a href="#">Hibernate</a></li>
+              <li><a href="#">Database</a></li>
+               <li><a href="#">JavaScript</a></li>
+               <li><a href="#">AngularJs</a>
+                  <ul class="nav dropdown-menu">
+                          <li><a href="#">Angular1</a></li>
+                          <li><a href="#">Angular2</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">DevOps</a>
+                  <ul class="nav dropdown-menu">
+                          <li><a href="#">GIT</a></li>
+                          <li><a href="#">Maven</a></li>
+                          <li><a href="#">Jenkins</a></li>
+                      </ul>
+                </li>
+                   <li><a href="#">Design Pattern</a>
+            </ul>
+        </div>
+            <div class="col-sm-9 col-md-9" style="background-color:white;"> Answer
+            <div ng-view=""></div>
+                </div>
+        </div>
+    </div>
+    <footer id="footer">
+		<div class="container">
+			<p>Copyright &copy; 2017. All rights reserved to Sabin Karki.</p>
+		</div>
+	</footer>
+    
+<!--Script-->
+<script type="application/javascript" src="js/bower_components/angular/angular.min.js"></script>
+<script type="application/javascript" src="js/bower_components/angular-route/angular-route.min.js"></script>
+<script type="application/javascript" src="js/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script type="application/javascript" src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<sript type="application/javascript" src="js/bower_components/jquery/dist/jquery.min.js"></sript>
+<script type="application/javascript" src="js/js/app.js"></script>
+<script type="application/javascript" src="js/js/controller/aboutMeCtrl.js"></script>
+</body>
+</html>
