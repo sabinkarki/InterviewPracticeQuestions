@@ -31,9 +31,10 @@
                    <li><a href="#">Design Pattern</a>
             </ul>
         </div>
-            <div class="col-sm-9 col-md-9" style="background-color:white;"> Answer
-            <div ng-view=""></div>
-                </div>
+            <div>
+            <div class="col-sm-9 col-md-9" style="background-color:white;" ng-controller="mainCtrl" ng-bind-html="showInMainController.message|showInHtml" ></div>
+             <div ng-view=""></div>
+            </div>
         </div>
     </div>
     <footer id="footer">
@@ -46,9 +47,8 @@
 <script type="application/javascript" src="js/bower_components/angular/angular.min.js"></script>
 <script type="application/javascript" src="js/bower_components/angular-route/angular-route.min.js"></script>
 <script type="application/javascript" src="js/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-<script type="application/javascript" src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<sript type="application/javascript" src="js/bower_components/jquery/dist/jquery.min.js"></sript>
 <script type="application/javascript" src="js/js/app.js"></script>
 <script type="application/javascript" src="js/js/controller/aboutMeCtrl.js"></script>
+<script type="application/javascript" src="js/js/factory.js"></script>
 </body>
 </html>
