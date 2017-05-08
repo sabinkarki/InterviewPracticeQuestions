@@ -6,8 +6,10 @@
 <body ng-app="myApp">
     <div class="container-fluid ">
         <div class="row">
+            <div class="col-sm-9 col-md-9" style="background-color:white;" ng-controller="mainCtrl" ng-bind-html="showInMainController.message|showInHtml" ></div>
+            <div class="wrapper">
              <div class="col-sm-3 col-md-3 nav-left">
-            <ul class="nav">
+              <ul class="nav">
               <li class="active"><a href="#!/aboutMe">About Me</a></li>
               <li><a href="#!/coreJava">Core Java</a></li>   
               <li><a href="#">Spring MVC</a></li>  
@@ -31,9 +33,7 @@
                    <li><a href="#">Design Pattern</a>
             </ul>
         </div>
-            <div>
-            <div class="col-sm-9 col-md-9" style="background-color:white;" ng-controller="mainCtrl" ng-bind-html="showInMainController.message|showInHtml" ></div>
-             <div ng-view=""></div>
+             <div ng-view="" class="view"></div>
             </div>
         </div>
     </div>
@@ -49,6 +49,5 @@
 <script type="application/javascript" src="js/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script type="application/javascript" src="js/js/app.js"></script>
 <script type="application/javascript" src="js/js/controller/aboutMeCtrl.js"></script>
-<script type="application/javascript" src="js/js/factory.js"></script>
 </body>
 </html>

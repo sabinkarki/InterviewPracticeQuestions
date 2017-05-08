@@ -1,22 +1,17 @@
 .nav-left{
-    float: left;
-     margin-top: 140;
+     float: left;
+     margin-top: 80;
     color:cyan;
 }
+
 
 .dropdown-menu{
     margin-left: -21px;
 }
 
-.aboutMe{
-        margin-top: 50;
-}
-
-#footer {
-    position: fixed;
-    bottom: 0;
-     margin-left: 300px;
-    width: 100%;
+.view{
+        margin-top: 93;
+         float: left;
 }
 
 #cursor{
@@ -25,4 +20,11 @@
 
 body{
     background-color:aquamarine;
+}
+
+#footer {
+    position: fixed;
+     bottom: 0;
+     margin-left: 300px;
+    width: 100%;
 }
