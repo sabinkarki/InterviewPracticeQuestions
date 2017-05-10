@@ -4,7 +4,7 @@ var app = angular.module('myApp', ['ngRoute', 'ngSanitize']);
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'templates/aboutMeTemplate/aboutMe.html',
+            templateUrl: 'templates/aboutMe.html',
             controller: 'aboutMeCtrl'
         })
         .when('/coreJava', {
