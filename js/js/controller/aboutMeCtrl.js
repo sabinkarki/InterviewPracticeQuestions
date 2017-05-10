@@ -1,20 +1,31 @@
-angular.module('myApp').controller('aboutMeCtrl',['$scope', 'myFactory',function($scope,myFactory){
+angular.module('myApp').controller('aboutMeCtrl', ['$scope', 'myFactory','jsonCallerFactory',function($scope, myFactory,jsonCallerFactory) {
+    var tempJson = {};
     
-    $scope.aboutMyself = function(){   
-        var msg="<h2>Hello Sabin</h2>";
-         myFactory.callFactory(msg);
+   
+    $scope.aboutMyself = function() {
+          var msg='';
+         jsonCallerFactory.getJsonData(function(temp){
+              tempJson = temp;
+              msg=tempJson.results[0].name;
+              myFactory.callFactory(msg);
+         });
     };
-       
-       $scope.aboutMyself();
     
-    $scope.aboutMyLastProject=function(){
-            var msg="<h1>My Lst project</h1>";
-          myFactory.callFactory(msg);
+    $scope.aboutMyself();
+
+    $scope.aboutMyLastProject = function() {
+        var msg=tempJson.results[1].name;                       
+        myFactory.callFactory(msg);
     };
-    
-    $scope.aboutChallenging=function(){
-             var msg="<h1>My Challenging project hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh jdsfbs fdsjfbds dsj jdsf dsj knsf sdk </h1>";
-          myFactory.callFactory(msg);
+
+    $scope.aboutChallenging = function() {
+        var msg=tempJson.results[2].name; 
+        myFactory.callFactory(msg);
+    }
+
+    $scope.questionsTobeAsked = function() {
+       var msg=tempJson.results[3].name;
+        myFactory.callFactory(msg);
     }
     
 }]);
